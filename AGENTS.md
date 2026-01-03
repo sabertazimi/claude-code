@@ -24,7 +24,7 @@ claude-code/
 │   ├── marketplace.json     # Marketplace distribution metadata
 │   └── plugin.json         # Plugin definition and metadata
 ├── skills/                  # Custom skills directory
-│   └── git-commit/         # Example skill implementation
+│   └── generating-commits/         # Example skill implementation
 │       └── SKILL.md        # Skill definition (YAML frontmatter + markdown)
 ├── LICENSE                 # MIT License
 └── README.md              # Project description
@@ -64,7 +64,7 @@ Documentation and workflow instructions here.
 
 **Current Skills:**
 
-- `git-commit` - Generates Conventional Commits messages, triggered by "commit" or "git commit"
+- `generating-commits` - Generates Conventional Commits messages, triggered by "commit" or "git commit"
 
 ## Development Workflow
 
@@ -96,7 +96,7 @@ git commit          # Create commits
 git push            # Push to remote
 ```
 
-**Note:** When committing, the repository includes a `git-commit` skill that generates Conventional Commits messages. Use `/commit` or type "commit" to activate it.
+**Note:** When committing, the repository includes a `generating-commits` skill that generates Conventional Commits messages. Type "commit" to activate it.
 
 ## Important Constraints
 
