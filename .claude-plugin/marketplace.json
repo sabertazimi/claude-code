@@ -1,0 +1,20 @@
+{
+  "name": "sabertaz-claude-code",
+  "description": "Development marketplace for sabertaz's personal collection of claude code plugins",
+  "owner": {
+    "name": "sabertaz",
+    "email": "sabertazimi@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "sabertaz-claude-code",
+      "description": "Sabertaz's personal collection of claude code plugins",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "sabertaz",
+        "email": "sabertazimi@gmail.com"
+      }
+    }
+  ]
+}

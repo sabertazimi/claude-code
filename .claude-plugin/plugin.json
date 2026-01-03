@@ -1,0 +1,13 @@
+{
+  "name": "sabertaz-claude-code",
+  "description": "Sabertaz's personal collection of claude code plugins",
+  "version": "1.0.0",
+  "author": {
+    "name": "sabertaz",
+    "email": "sabertazimi@gmail.com"
+  },
+  "homepage": "https://github.com/sabertazimi/claude-code",
+  "repository": "https://github.com/sabertazimi/claude-code",
+  "license": "MIT",
+  "keywords": ["plugins", "skills", "productivity", "git", "development"]
+}
