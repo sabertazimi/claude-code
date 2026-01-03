@@ -1,5 +1,5 @@
 ---
-name: Git Commit
+name: git-commit
 description: Generates Conventional Commits messages. Use when the user says "commit", "git commit", or asks to commit changes, wants to create a commit, or when work is complete and ready to commit.
 allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git branch:*), Bash(git log:*), Bash(git commit:*)
 license: MIT
@@ -28,7 +28,27 @@ Activate this skill when:
 
 ### 1. Gather Context
 
-First, collect information about the current state:
+First, read `CLAUDE.md` in the project root to check if the user has defined Git commit preferences:
+
+Look for sections like:
+
+- `## Commit`
+- `## Commit Guidelines`
+- `## Git Commits`
+- `## Git Commit Preferences`
+- `## Commit Message Preferences`
+- Or any section mentioning commit format/style
+
+If found, parse the natural language preferences to understand:
+
+- Whether `scope` is required/optional/omitted
+- Whether `body` is required/optional/omitted
+- Which `type` values are preferred
+- Any other formatting preferences
+
+If no preferences are defined, use the default Conventional Commits format.
+
+Then, collect information about the current git state:
 
 ```bash
 # Current git status
@@ -53,7 +73,7 @@ Analyze the diff content to understand the nature and purpose of the changes
 Generate 3 commit message candidates based on the changes:
 
 - Each candidate should be concise, clear, and capture the essence of the changes
-- Prefer Conventional Commits format
+- Follow Conventional Commits format, **adapting to user preferences discovered in step 1** (scope, body, type requirements)
 
 **Format:**
 
@@ -63,25 +83,13 @@ type(scope): concise subject line describing what changed
 [Summary of the modifications]
 ```
 
-**Conventional Commits Types:**
-
-- **feat**: new features
-- **fix**: bug fixes
-- **docs**: documentation changes
-- **style**: formatting, missing semicolons, etc.
-- **refactor**: code restructuring without changing functionality
-- **test**: adding or updating tests
-- **chore**: maintenance tasks, dependencies, build process
-- **perf**: performance improvements
-- **ci**: continuous integration changes
-
 ### 4. Execute Commit
 
 **IMPORTANT: Do not use `git add -A` or `git add .`**
 Commit only the files that are already staged and understood.
 
 Select the most appropriate commit message from the 3 candidates and explain the reasoning for your choice,
-**Commit with heredoc** (for multi-line messages):
+**commit with heredoc** (for multi-line messages):
 
 ```bash
 git commit -m "$(cat <<'EOF'
