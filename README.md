@@ -4,8 +4,15 @@ Personal claude code plugin marketplace
 
 ## Installation
 
+Register the marketplace:
+
 ```bash
 /plugin marketplace add sabertazimi/claude-code
+```
+
+Install the plugin:
+
+```bash
 /plugin install sabertaz-claude-code
 ```
 
