@@ -13,7 +13,7 @@ Register the marketplace:
 Install the plugin:
 
 ```bash
-/plugin install sabertaz-claude-code
+/plugin install sabertaz
 ```
 
 ## License
