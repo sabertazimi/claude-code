@@ -22,12 +22,14 @@ The repository distributes plugins through Claude Code's marketplace system.
 claude-code/
 ├── .claude-plugin/          # Plugin configuration (required by Claude Code)
 │   ├── marketplace.json     # Marketplace distribution metadata
-│   └── plugin.json         # Plugin definition and metadata
+│   └── plugin.json          # Plugin definition and metadata
+├── hooks/                   # Claude Code hooks configuration
+│   └── hooks.json           # System notification hooks
 ├── skills/                  # Custom skills directory
-│   └── generating-commits/         # Example skill implementation
-│       └── SKILL.md        # Skill definition (YAML frontmatter + markdown)
-├── LICENSE                 # MIT License
-└── README.md              # Project description
+│   └── generating-commits/  # Example skill implementation
+│       └── SKILL.md         # Skill definition (YAML frontmatter + markdown)
+├── LICENSE                  # MIT License
+└── README.md                # Project description
 ```
 
 ### Plugin System
@@ -36,6 +38,12 @@ claude-code/
 
 - `plugin.json` - Defines plugin identity (name, version, author, repository)
 - `marketplace.json` - Links plugin to marketplace distribution
+
+**Hooks Directory (hooks/):**
+
+- `hooks.json` - Defines hooks that execute at specific Claude Code events
+- Currently configured for system notifications (Notification, Stop events)
+- Supports platform-specific commands (Windows, macOS, Linux)
 
 **Skills Directory (skills/):**
 
