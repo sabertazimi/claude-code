@@ -1,6 +1,6 @@
-# claude-code
+# Claude Code
 
-Personal claude code plugin marketplace
+Personal Claude Code plugin marketplace
 
 ## Installation
 
