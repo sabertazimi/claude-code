@@ -27,14 +27,16 @@ Activate this skill when:
 
 ### 1. Check Project Preferences
 
-Read `CLAUDE.md` for commit preferences. Look for sections mentioning:
+Read `CLAUDE.md` for commit preferences.
+**Priority**: Project preferences override default Conventional Commits.
+Look for sections mentioning:
 
 - Commit format/style guidelines
+- Type values (allowed types and their meanings)
 - Scope requirements (required/optional/omitted)
 - Body requirements (required/optional/omitted)
-- Preferred type values
 
-If no preferences defined, use default Conventional Commits format.
+If no preferences defined in the project, fall back to standard Conventional Commits.
 
 ### 2. Gather Context
 
@@ -60,7 +62,7 @@ Analyze the diff content to understand the nature and purpose of the changes.
 Generate 3 commit message candidates based on the changes:
 
 - Each candidate should be concise, clear, and capture the essence of the changes
-- Follow Conventional Commits format, **adapting to user preferences discovered in step 1** (scope, body, type requirements)
+- Follow Conventional Commits format, **with project preferences taking priority** (type, scope, body requirements)
 
 **Format:**
 
