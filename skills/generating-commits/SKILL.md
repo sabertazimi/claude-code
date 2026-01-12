@@ -2,6 +2,7 @@
 name: generating-commits
 description: Generates Conventional Commits messages, then commits changes. Use when the user says "commit", "git commit", or asks to commit changes, wants to create a commit, or when work is complete and ready to commit.
 allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git branch:*), Bash(git log:*), Bash(git commit:*)
+user-invocable: false
 license: MIT
 ---
 
