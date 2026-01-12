@@ -1,7 +1,7 @@
 ---
 name: generating-commits
 description: Generates Conventional Commits messages, then commits changes. Use when the user says "commit", "git commit", or asks to commit changes, wants to create a commit, or when work is complete and ready to commit.
-allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git branch:*), Bash(git log:*), Bash(git commit:*)
+allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git branch:*), Bash(git log:*), Bash(git commit:*)
 license: MIT
 ---
 
@@ -55,6 +55,8 @@ git log --oneline -10
 # Current branch
 git branch --show-current
 ```
+
+**Edge case**: If `git diff --staged` output is empty (no staged changes), prompt the user to stage files first using `git add <files>`. Do not proceed with commit until files are staged.
 
 ### 3. Generate Message Candidates
 
