@@ -13,6 +13,6 @@
       "mcp__playwright",
       "mcp__shadcn"
     ],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "plan"
   }
 }
