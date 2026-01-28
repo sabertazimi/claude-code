@@ -22,7 +22,7 @@ Activate this skill when:
 
 ## Critical Rules
 
-**MUST NEVER** add co-author or mention Claude Code in commit messages
+**MUST NEVER** add co-author or mention Claude Code/Cursor (ANY agents) in commit messages
 
 ## Workflow
 
@@ -96,4 +96,4 @@ EOF
 - **Use heredoc for multi-line commits** - Ensures proper formatting
 - **Be specific** in summaries
 - **Think about the reader** - someone explaining this code repository in 6 months
-- **No co-authors** - Never add "Co-Authored-By" or mention Claude Code
+- **No co-authors** - Never add "Co-Authored-By" or mention Claude Code/Cursor (ANY agents)
