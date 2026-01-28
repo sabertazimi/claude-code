@@ -1,7 +1,5 @@
 # Claude Code
 
-Personal Claude Code plugin marketplace
-
 ## Installation
 
 Register the marketplace:
