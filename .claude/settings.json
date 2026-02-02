@@ -8,9 +8,7 @@
       "Skill",
       "WebFetch",
       "WebSearch",
-      "mcp__context7",
-      "mcp__playwright",
-      "mcp__shadcn"
+      "mcp__context7"
     ],
     "defaultMode": "plan"
   }
