@@ -10,7 +10,7 @@ The repository distributes plugins through Claude Code's marketplace system.
 
 **Project Type:** Static configuration/documentation repository (no build system, no compilation)
 
-**Repository:** [sabertazimi/claude-code](https://github.com/sabertazimi/claude-code)
+**Repository:** [sabertazimi/skills](https://github.com/sabertazimi/skills)
 
 **License:** [MIT](./LICENSE)
 
@@ -19,7 +19,6 @@ The repository distributes plugins through Claude Code's marketplace system.
 ### Directory Structure
 
 ```plaintext
-claude-code/
 ├── .claude-plugin/          # Plugin configuration (required by Claude Code)
 │   ├── marketplace.json     # Marketplace distribution metadata
 │   └── plugin.json          # Plugin definition and metadata

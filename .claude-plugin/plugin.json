@@ -6,8 +6,14 @@
     "name": "sabertaz",
     "email": "sabertazimi@gmail.com"
   },
-  "homepage": "https://github.com/sabertazimi/claude-code",
-  "repository": "https://github.com/sabertazimi/claude-code",
+  "homepage": "https://github.com/sabertazimi/skills",
+  "repository": "https://github.com/sabertazimi/skills",
   "license": "MIT",
-  "keywords": ["plugins", "skills", "productivity", "git", "development"]
+  "keywords": [
+    "plugins",
+    "skills",
+    "productivity",
+    "git",
+    "development"
+  ]
 }

@@ -1,11 +1,19 @@
-# Claude Code
+# Skills
+
+Personal agent plugin marketplace.
 
 ## Installation
+
+```bash
+npx skills add sabertazimi/skills
+```
+
+### Claude Code
 
 Register the marketplace:
 
 ```bash
-/plugin marketplace add sabertazimi/claude-code
+/plugin marketplace add sabertazimi/skills
 ```
 
 Install the plugin:
