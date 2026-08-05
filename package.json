@@ -6,13 +6,13 @@
   "description": "Personal agent plugin marketplace",
   "author": "sabertazimi <sabertazimi@gmail.com",
   "license": "MIT",
-  "homepage": "https://github.com/sabertazimi/skills",
+  "homepage": "https://github.com/sabertaz/skills",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sabertazimi/skills.git"
+    "url": "git+https://github.com/sabertaz/skills.git"
   },
   "bugs": {
-    "url": "https://github.com/sabertazimi/skills/issues"
+    "url": "https://github.com/sabertaz/skills/issues"
   },
   "keywords": [
     "AI",
